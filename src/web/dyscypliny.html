@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<title>Trójbój siłowy</title>
+	
+	<meta name="description" content="Moje hobby" />
+	<meta name="keywords" content="hobby, trójbój siłowy, siłownia, sport, zawody, ćwiczenia, trening, pasja, sekcja trójboju, ciężary " />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="sticky.js"></script>
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" style="float:left;" alt="logo">    
+                <span style="color: #B22222;">TRÓJBÓJ </span><span style="color: #07385c;">SIŁOWY</span>
+                <div style="clear:both;"></div>
+            </div>      
+        </div>
+        </header>
+
+        <nav>
+        <div class="nav">
+            <ol>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="dyscypliny.html">Dyscypliny</a></li>
+                <li><a href="#">Federacje</a>
+                    <ul>
+                        <li><a href="http://www.pzkfits.pl/" target="_blank">PZKFiTS</a></li>
+                        <li><a href="https://www.powerlifting.sport/" target="_blank">IPF</a></li>
+                        <li><a href="https://www.europowerlifting.org/" target="_blank">EPF</a></li>
+                    </ul>   
+                </li>    
+                <li><a href="rekordy.html">Rekordy</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="galeria.php">Galeria</a></li>
+            </ol>    
+        </div>
+        </nav>
+
+        <main>
+        <div class="content">
+            <h1 style="color: #07385c;">Dyscypliny</h1>
+            <section>
+                <h2>Przysiad ze sztangą</h2>
+                <p>Podczas trójboju siłowego, ćwiczenie to wykonywane jest zazwyczaj w wersji „low bar”. W tym wariancie sztanga spoczywa na linii wzdłuż grzebienia łopatek. Jest to ustawienie, umożliwiające osiągnięcie najskuteczniejszego wyniku.</p>
+                
+                <a href="img/przysiad.jpg" target="_blank" id="result-session" onclick="count_clicks_session();"><img src="img/przysiad.jpg" class="imgdys" alt="przysiad-zdjęcie"></a>
+
+                <div id="licznik"></div>
+
+
+      
+
+            </section>
+                
+            
+            <section>
+                <h2>Wyciskanie leżąc</h2>
+                <p>Czyli wyciskanie na ławce poziomej. Zawodnik kładzie się na ławeczce tak, aby głowa, barki i pośladki do niej przylegały. Stopy powinny pozostać w kontakcie z blokami lub pomostem. Po otrzymaniu sygnału rozpoczęcia ćwiczenia, zawodnik opuszcza sztangę do klatki piersiowej i przytrzymuje ją w tej pozycji przez określony czas. Następnie wykonuje wyciskanie do wyprostu ramion.</p>
+                
+                <a href="img/wyciskanie.jpg" target="_blank"><img src="img/wyciskanie.jpg" class="imgdys" alt="wyciskanie leżąc-zdjęcie"></a>
+            </section>
+            
+            
+            <section>
+                <h2>Martwy ciąg</h2>
+                <p>Martwy ciąg w trójboju siłowy wykonywać można dowolnym chwytem. Na zakończenie boju nogi muszą pozostać wyprostowane w kolanach, a barki odciągnięte do tyłu. Każde oderwanie sztangi od podłoża jest traktowane jako jedno podejście, nawet jeżeli nie dojdzie do wyprostu ciała.</p>
+                
+                <a href="img/martwy.jpg" target="_blank"><img src="img/martwy.jpg" class="imgdys" alt="martwy ciąg-zdjęcie"></a>
+            </section>
+
+        </div>  
+        </main>  
+   
+        <a href="#" class="guzik">Kliknij, aby udać się na górę strony</a>
+
+
+
+        <footer>
+        <div class="footer">
+            Wszelkie prawa zastrzeżone &copy; Patryk Miszke_Grupa Ⅰ
+        </div>   
+        </footer>
+
+    
+    </div>
+</body>
+</html>
+
+<script>
+    document.getElementById('container').style.backgroundImage = 'url(img/tlo_js.jpg)';
+ </script>   
+
+<script>
+    function count_clicks_session() {
+        if (sessionStorage.click_count) {
+            sessionStorage.click_count = Number(sessionStorage.click_count) + 1;
+        } else {
+            sessionStorage.click_count = 1;
+        }
+        var div = document.getElementById("licznik");
+        div.innerHTML = "Odtworzenia powyższego zdjęcia w tej sesji: " +
+            sessionStorage.click_count;
+    }
+    </script>
+
+
+    
+  

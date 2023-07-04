@@ -1,0 +1,312 @@
+body
+{
+    background-image: url("img/tlo.jpg");
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin: 0 !important;
+}
+
+#container
+{
+    width: 100%;
+    height: 100%;
+}
+
+.header
+{
+    width: 100%;
+    padding: 40px 0;
+    font-size: 76%;
+}
+
+
+ .logo
+ {
+    width:30%;
+    font-size: 250%;
+    margin-left:auto;
+    margin-right:auto;
+}
+   
+.nav
+{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #B22222;
+    text-align: center;
+    border-top: 1px solid #A11111;
+    border-bottom: 1px solid #A11111;
+    position: -webkit-sticky;
+ }
+
+
+
+@media (max-width: 1050px) 
+{
+    body
+    {
+        font-size: 80%;
+    }
+
+    h1
+    {
+        font-size: 130%;
+    }
+
+    h2 
+    {
+        font-size: 120%;
+    }
+
+    .logo img 
+    {
+        display: none;
+    }
+
+    .sekcja
+    {
+        display: none;
+    }
+
+
+    .nav
+    {
+        float: left;
+        width: 15%;
+        margin-left: 1% ;
+        padding: 0;
+        border: none;
+    }
+
+    .content
+    {
+        float: right;
+    }
+
+
+    ol > li
+    {
+        position: relative;
+        background-color:#B22222;
+        font-size: 80%;
+        border-top: 1px dashed #07385c;
+    }
+
+    ol > li:first-child
+    {
+        border-top: none;
+    }
+}
+
+.content
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.footer
+{
+    text-align: center;
+    background-color: #07385c;
+    padding: 30px;
+    color: #fff;
+    margin-top: 3%;
+}
+
+ol
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 140%;
+    display: inline-block;
+}
+
+ol a
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+ol > li 
+{
+    padding: 5px;
+    float: left;
+    width: 150px;
+    height:40px;
+    border-right: 1px dashed #07385c;
+}
+
+ol:first-child
+{
+    border-left: 1px dashed #07385c;
+}
+
+ol > li:hover
+{
+    background-color: #C33333;
+}
+
+ol > li:hover a
+{
+    color: #07385c;
+}
+
+ol > li > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    background-color: #D44444;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed #B22222;
+}
+
+ol > li > ul > li:hover
+{
+    background-color: #B22222;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 200%;
+}
+
+.imgdys
+{
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5%;
+    transition: width 2s, height 2s;
+}
+
+.imgdys:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+    width: 70%;
+    height: 70%;
+}
+
+.imgrek
+{
+    width: 30%;
+    height: 30%;
+    padding: 10px;
+    transition: width 2s, height 2s;
+}
+
+.imgrek:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+}
+
+.ankieta
+{
+  float: left;
+  width: 50%;
+}
+
+.sekcja
+{
+    margin-top: 5%;
+    float: right;
+    margin-left: 3%;
+    width: 47%;
+}
+
+.sekcja table
+{
+    border: 3px solid #07385c;
+}
+
+.sekcja td
+{
+    border: 3px solid #07385c;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 170%;
+}
+
+.guzik
+{
+    display: block;
+    padding: 5px;
+    margin-top: 1%;
+    text-decoration: none;
+    animation:animacja_guzik 10s infinite;
+    text-align: center;
+}
+
+
+.guzik:hover
+{
+   cursor: pointer;
+}
+
+@keyframes animacja_guzik
+{
+  0% { color:rgb(250, 1, 167); }
+  12.5% { color:rgb(212, 0, 255); }
+  25% { color:rgb(98, 0, 255); }
+  37.5% { color:rgb(0, 4, 255); }
+  50% { color:rgb(0, 217, 255); }
+  62.5%{ color:rgb(0, 4, 255); }
+  75%{ color:rgb(98, 0, 255); }
+  87.5%{ color:rgb(212, 0, 255); }
+  100% { color:rgb(250, 1, 167); }
+}
+
+h3
+{
+    font-size: 130%;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+
+  button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+  }
+
+ 
+

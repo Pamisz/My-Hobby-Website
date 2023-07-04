@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<title>Trójbój siłowy</title>
+	
+	<meta name="description" content="Moje hobby" />
+	<meta name="keywords" content="hobby, trójbój siłowy, siłownia, sport, zawody, ćwiczenia, trening, pasja, sekcja trójboju, ciężary " />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="sticky.js"></script>    
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+
+    <div id="container">
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" style="float:left;" alt="logo">    
+                <span style="color: #B22222;">TRÓJBÓJ </span><span style="color: #07385c;">SIŁOWY</span>
+                <div style="clear:both;"></div>
+            </div>      
+        </div>
+    </header>    
+
+        <nav>
+        <div class="nav">
+            <ol>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="dyscypliny.html">Dyscypliny</a></li>
+                <li><a href="#">Federacje</a>
+                    <ul>
+                        <li><a href="http://www.pzkfits.pl/" target="_blank">PZKFiTS</a></li>
+                        <li><a href="https://www.powerlifting.sport/" target="_blank">IPF</a></li>
+                        <li><a href="https://www.europowerlifting.org/" target="_blank">EPF</a></li>
+                    </ul>   
+                </li>    
+                <li><a href="rekordy.html">Rekordy</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="galeria.php">Galeria</a></li>
+            </ol>    
+        </div>
+        </nav>
+
+    
+        <main>
+            <article>
+        <div class="content" id="content">
+            <h1 style="color: #07385c;">Historia trójboju siłowego</h1>
+						<p>Początki trójboju siłowego sięgają końca lat 50, kiedy to rozegrano Pierwsze Mistrzostwa Wielkiej Brytanii. W obecnym kształcie trójbój ukształtował się pod koniec lat 60. W 1972 roku powstała Międzynarodowa Federacja Trójboju Siłowego (IPF).</p>
+
+						<p>Rok później rozegrano pierwsze oficjalne mistrzostwa świata. 11 maja 1977 roku powstała Europejska Federacja Trójboju Siłowego (EPF). Rok później w Birmingham odbyły się pierwsze mistrzostwa Europy. Polski Związek Kulturystyki i Trójboju Siłowego jest członkiem IPF i EPF od 1989 roku.</p>
+
+						<p>W dniach 21–22.05.1977, w Piotrkowie Trybunalskim zostały zorganizowane pierwsze mistrzostwa Polski w kulturystycznym trójboju siłowym.</p>
+
+						<p>Do zmagań o tytuły mistrzowskie w pięciu wagach przystąpiło 36 zawodników kulturystów z 14 ognisk lub klubów. Pierwszymi mistrzami Polski w poszczególnych kategoriach zostali:</p>
+							
+						<ul>	
+						<li>waga lekka (do 75 kg) – Andrzej Staszyński „Syrenka” Warszawa z wynikiem 527,5 kg (155, 160, 212,5)</li>
+						<li>waga średnia (do 80 kg) – Stanisław Kowalski „Jagiellonka” Piotrków Tryb. z wynikiem 540 kg (135, 165, 240)</li>
+						<li>waga półciężka (do 85 kg) – Antoni Cecot „Błyskawica” Warszawa z wynikiem 602,5 kg (172,5, 180, 250)</li>
+						<li>waga lekkociężka (do 90 kg) – Włodzimierz Szczepański „Jagiellonka” Piotrków Tryb. z wynikiem 630 kg (170, 200, 260)</li>
+						<li>waga ciężka (powyżej 90 kg) – Bolesław Sotomski „Błyskawica” Warszawa z wynikiem 670 kg (180, 230, 260).</li>
+						</ul>
+						
+						<p>Trójbój siłowy jest sportem nieolimpijskim.</p>
+
+						<p>W Polsce trójbój reprezentuje Polski Związek Kulturystyki, Fitness i Trójboju Siłowego (PZKFiTS), zrzeszony w IPF – International Powerlifting Federation (Międzynarodowa Federacja Trójboju Siłowego) i EPF – European Powerlifting Federation (Europejska Federacja Trójboju Siłowego). Od 14 stycznia 2010 trenerem kadry narodowej seniorów, seniorek oraz juniorów jest Arkadiusz Znojek, trener trójboistów siłowych Tęczy Społem Kielce. Przed 14 stycznia 2010 roku trenerami kadry narodowej w trójboju siłowym byli Roman Szymkowiak (Kościan) i Zdzisław Pieńkos (Pułtusk).
+                           
+                        </p>
+
+                        
+
+                      
+        
+                    </div>
+            </article>   
+        </main>
+
+        <footer>
+        <div class="footer">
+            Wszelkie prawa zastrzeżone &copy; Patryk Miszke_Grupa Ⅰ        
+        </div>  
+        </footer> 
+    
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(".header").effect("bounce", {direction:"horizontal"}, 2000, function(){      
+    });
+</script>
+
+<script>
+    document.getElementById('container').style.backgroundImage = 'url(img/tlo_js.jpg)';
+ </script>   
+
+<script>
+    const ciekawostka = document.createElement("p");
+    const zawartość = document.createTextNode("Ciekawostka! Życiówka Arkadiusza Znojka wynosi 762,5kg!");
+    ciekawostka.appendChild(zawartość);
+    
+    const element = document.getElementById("content");
+    element.appendChild(ciekawostka);
+</script>
+
+
+
+
+
+
+

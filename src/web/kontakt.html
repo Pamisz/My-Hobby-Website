@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<title>Trójbój siłowy</title>
+	
+	<meta name="description" content="Moje hobby" />
+	<meta name="keywords" content="hobby, trójbój siłowy, siłownia, sport, zawody, ćwiczenia, trening, pasja, sekcja trójboju, ciężary " />
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="sticky.js"></script>
+	
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" style="float:left;" alt="logo">    
+                <span style="color: #B22222;">TRÓJBÓJ </span><span style="color: #07385c;">SIŁOWY</span>
+                <div style="clear:both;"></div>
+            </div>      
+        </div>
+        </header>
+
+        <nav>
+        <div class="nav">
+            <ol>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="dyscypliny.html">Dyscypliny</a></li>
+                <li><a href="#">Federacje</a>
+                    <ul>
+                        <li><a href="http://www.pzkfits.pl/" target="_blank">PZKFiTS</a></li>
+                        <li><a href="https://www.powerlifting.sport/" target="_blank">IPF</a></li>
+                        <li><a href="https://www.europowerlifting.org/" target="_blank">EPF</a></li>
+                    </ul>   
+                </li>    
+                <li><a href="rekordy.html">Rekordy</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="galeria.php">Galeria</a></li>
+            </ol>    
+        </div>
+        </nav>
+
+        <main>
+            <div class="content">
+        
+            <h1 style="color: #07385c;">Kontakt</h1>        
+
+             <section>  
+        <div class="ankieta">
+            <h3>Jeżeli chciałbyś/chciałabyś dołączyć do sekcji trójboju, zapraszam do wypełnienia ankiety! ;)</h3><br>
+            
+            <form action="odbierz.php" method="get">
+                
+                <label>Imię: <input type="text" name="Imię" title="Wpisuj tylko prawdziwe dane!"></label> <br>
+                <label>Nazwisko: <input type="text" name="Nazwisko" title="Wpisuj tylko prawdziwe dane!"></label> 
+        
+					<p>Płeć:<br>
+					<label>Male<input type="radio" name="Płeć" value="Mężczyzna"></label>
+					<label>Female<input type="radio" name="Płeć" value="Kobieta"></label>
+
+					<p>Wiek:<br>
+					<label><input type="radio" name="Wiek" value="mniej niż 15"></label>mniej niż 15<br>
+					<label><input type="radio" name="Wiek" value="15-19"></label>15-19<br>
+					<label><input type="radio" name="Wiek" value="20-29"></label>20-29<br>
+                    <label><input type="radio" name="Wiek" value="30-39"></label>30-39<br>
+                    <label><input type="radio" name="Wiek" value="40-60"></label>40-60<br>
+                    <label><input type="radio" name="Wiek" value="więcej niż 60"></label>więcej niż 60</p>
+					
+					<p>Ulubione ćwiczenie:<br>
+                    <label><input type="checkbox" name="Ćwiczenie" value="Przysiad"></label>Przysiad<br>
+                    <label><input type="checkbox" name="Ćwiczenie" value="Wyciskanie leżąc"></label>Wyciskanie leżąc<br>
+                    <label><input type="checkbox" name="Ćwiczenie" value="Martwy ciąg"></label>Martwy Ciąg</p>
+					
+					<p>Twoja kategoria wagowa:
+						<select name="Waga">
+							<option>do 59 kg</option>
+							<option>od 59,01 kg do 66 kg</option>
+							<option>od 66,01 kg do 74 kg</option>
+							<option selected>od 74.01 kg do 83 kg</option>
+							<option>od 83,01 kg do 93 kg</option>
+							<option>od 93,01 kg do 105 kg</option>
+							<option>od 105,01 kg do 120 kg</option>
+							<option>od 120,1 kg</option>
+						</select>
+						
+						<p>Opowiedz o swoim doświadczeniu:</p>
+								<textarea name="Komentarz" cols="50" rows="10">Śmiało, pochwal się ;)</textarea>
+								<br>
+								
+						<input type="submit" value="Wyślij formularz" onclick="count_clicks();">
+						
+						<input type="reset" value="Wyczyść dane">           
+            </form>  
+
+            <div id="kliknięcia"></div>
+        </div>
+        </section>
+
+        <section>
+        <div class="sekcja">
+            
+            
+            <h3>Największe sukcesy sekcji trójboju siłowego Politechniki Gdańskiej</h3><br><br>
+        <table>
+            <tr><td>2019</td></tr>
+            <tr><td>I miejsce w AMP w klasyfikacji generalnej kobiet</td></tr>
+            <tr><td>II miejsce w AMP w klasyfikacji generalnej mężczyzn</td></tr>
+            <tr><td>I miejsce w AMP w klasyfikacji uczelni technicznych kobiet</td></tr>
+        </table>    
+
+        <br>
+
+        <table>
+            <tr><td>2018</td></tr>
+            <tr><td>VI miejsce w AMP w klasyfikacji generalnej</td></tr>
+            <tr><td>IV miejsce w AMP w klasyfikacji uczelni technicznych</td></tr>
+        </table>    
+            
+        <br>
+
+        <table>
+            <tr><td>2016</td></tr>
+            <tr><td>IV miejsce w AMP w klasyfikacji uczelni technicznych</td></tr>
+        </table>
+        <br />
+
+        </div>
+        </section>
+          
+        <div style="clear:both;"></div>
+
+      
+
+    </div>
+    
+    </main>
+
+    <footer>
+    <div class="footer">
+        Wszelkie prawa zastrzeżone &copy; Patryk Miszke_Grupa Ⅰ
+    </div>  
+    </footer>
+
+    </div> 
+</body>
+</html>
+
+<script>
+    $( function() {
+      $( document ).tooltip();
+    } );
+    </script>
+    
+
+<script>
+    document.getElementById('container').style.backgroundImage = 'url(img/tlo_js.jpg)';
+ </script>   
+
+
+<script>
+    function count_clicks() {
+        if (localStorage.click_count) {
+            localStorage.click_count = Number(localStorage.click_count) + 1;
+        } else {
+            localStorage.click_count = 1;
+        }
+        var div = document.getElementById("kliknięcia");
+        div.innerHTML = "Liczba wysłanych formluarzy: " +
+        localStorage.click_count;
+    }
+    </script>
+    
+
+ 
